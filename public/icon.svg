@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1035"/>
+      <stop offset="50%" stop-color="#0b0f17"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- Speaker Cone Outer Rim -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="url(#glow)" stroke-width="12" opacity="0.3" filter="url(#neon)"/>
+  <circle cx="256" cy="256" r="130" fill="#131926" stroke="url(#glow)" stroke-width="16"/>
+
+  <!-- Speaker Cone Diaphragm -->
+  <circle cx="256" cy="256" r="85" fill="#1e2738" stroke="#a855f7" stroke-width="8"/>
+  <circle cx="256" cy="256" r="45" fill="url(#glow)"/>
+
+  <!-- Sound Waves (Left & Right) -->
+  <path d="M 100 216 A 60 60 0 0 0 100 296" fill="none" stroke="#a855f7" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 70 186 A 100 100 0 0 0 70 326" fill="none" stroke="#3b82f6" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+
+  <path d="M 412 216 A 60 60 0 0 1 412 296" fill="none" stroke="#a855f7" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 442 186 A 100 100 0 0 1 442 326" fill="none" stroke="#3b82f6" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Accent Sparkle -->
+  <circle cx="360" cy="150" r="10" fill="#ec4899" filter="url(#neon)"/>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Party Speaker - Synchronized Multi-Device Audio System",
+  "description": "Turn multiple smartphones and devices into a synchronized surround-sound party speaker with NTP clock synchronization, drift compensation, spatial audio channels, and Android app companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
